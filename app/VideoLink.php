@@ -88,8 +88,14 @@ class VideoLink
     }
 
 
+    /**
+     * @return mixed
+     */
     public function __toString()
     {
+        if (is_null($this->video_link)) {
+            die('Authentication Failed');
+        }
         return $this->video_link;
     }
 

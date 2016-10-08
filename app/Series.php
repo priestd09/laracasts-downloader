@@ -74,14 +74,14 @@ class Series
     }
 
     /**
-     * @param $seriesUrl
+     * @internal param $seriesUrl
      */
-    public function run($seriesUrl)
+    public function run()
     {
         $downloadUris = '';
         $lessonsCount = (int) $this->getLessonCount();
         for ($i = 1; $i <= $lessonsCount; $i++) {
-            $downloadUris .= new VideoLink($seriesUrl . '/episodes/' . $i);
+            $downloadUris .= new VideoLink($this->uri . '/episodes/' . $i);
             if ($lessonsCount != $i) {
                 $downloadUris .= "\n";
             }
