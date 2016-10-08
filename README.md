@@ -38,4 +38,4 @@ $seriesUrl = 'https://laracasts.com/series/vim-mastery';
 php index.php
 ```
 
-#### 打开 [Aria2GUI](https://github.com/MacGapProject/MacGap1) Add Task 粘贴生成的downloadUris.txt至地址栏处即可点击Add
+#### 打开 [Aria2GUI](https://github.com/yangshun1029/aria2gui) Add Task 粘贴生成的downloadUris.txt至地址栏处即可点击Add
